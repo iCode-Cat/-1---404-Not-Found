@@ -1,0 +1,22 @@
+:root {
+    --ff-primary:'Space Mono', monospace;
+    --ff-footer:'Montserrat', sans-serif;
+
+    --clr-primary-700:#333333;
+    --clr-primary-400:#4F4F4F;
+
+    --clr-button-700:#FFFFFF;
+    --clr-primary-btn:#333333;
+
+    --clr-primary-footer:#BDBDBD;
+
+    --fs-700:3rem;
+    --fs-400:1.125rem;
+    --fs-header:1.5rem;
+
+    @media (min-width:90em) {
+        --fs-700:4rem;
+        --fs-400:1.5rem;
+    }
+
+}

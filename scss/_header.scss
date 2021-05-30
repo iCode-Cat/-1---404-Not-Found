@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+.header__text {
+    padding-top: 1rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: var(--fs-header);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+}
+
+@media (min-width:90em) {
+    .header__text {
+        margin-top: 1rem;
+    }
+}

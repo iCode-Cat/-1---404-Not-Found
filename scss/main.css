@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+:root {
+  --ff-primary:'Space Mono', monospace;
+  --ff-footer:'Montserrat', sans-serif;
+  --clr-primary-700:#333333;
+  --clr-primary-400:#4F4F4F;
+  --clr-button-700:#FFFFFF;
+  --clr-primary-btn:#333333;
+  --clr-primary-footer:#BDBDBD;
+  --fs-700:3rem;
+  --fs-400:1.125rem;
+  --fs-header:1.5rem;
+}
+
+@media (min-width: 90em) {
+  :root {
+    --fs-700:4rem;
+    --fs-400:1.5rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-family: var(--ff-primary);
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 0 1.5rem;
+}
+
+footer {
+  font-family: var(--ff-footer);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 90em) {
+  main {
+    padding: 0 4.8rem 0 4.8rem;
+  }
+  footer {
+    min-height: unset;
+  }
+}
+
+.header__text {
+  padding-top: 1rem;
+  font-family: 'Inconsolata', monospace;
+  font-size: var(--fs-header);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+}
+
+@media (min-width: 90em) {
+  .header__text {
+    margin-top: 1rem;
+  }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 286px;
+  margin: 4rem 0 4.8rem 0;
+}
+
+.hero h1 {
+  font-size: var(--fs-700);
+  color: var(--clr-primary-700);
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  font-style: normal;
+  margin-bottom: 1.875rem;
+}
+
+.hero p {
+  max-width: 328px;
+  font-size: var(--fs-400);
+  color: var(--clr-primary-400);
+  font-family: Space Mono;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  margin-bottom: 4.125rem;
+}
+
+@media (min-width: 90em) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 12.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 539px;
+    margin-right: 7.375rem;
+  }
+  .hero h1 {
+    margin-top: 3rem;
+  }
+  .hero p {
+    max-width: 381px;
+    line-height: 35px;
+  }
+}
+
+footer p {
+  color: var(--clr-primary-footer);
+  font-size: 0.875rem;
+  margin-left: -1.5rem;
+  padding-bottom: 1rem;
+}
+
+.hero__button {
+  max-width: 216px;
+  width: 100%;
+  height: 68px;
+  color: var(--clr-button-700);
+  background: var(--clr-primary-btn);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+}
+/*# sourceMappingURL=main.css.map */

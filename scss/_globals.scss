@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+html {
+    font-family: var(--ff-primary);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.5rem 
+}
+footer {
+    font-family: var(--ff-footer);
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+@media (min-width:90em) {
+    main {
+        padding: 0 4.8rem 0 4.8rem
+    }
+
+    footer {
+        min-height: unset;
+    }
+}
