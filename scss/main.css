@@ -54,7 +54,7 @@ dd {
 
 /* Set core body defaults */
 body {
-  height: 100vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -110,7 +110,7 @@ html {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   display: -webkit-box;
   display: -ms-flexbox;
