@@ -113,6 +113,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -122,9 +125,6 @@ main {
 
 footer {
   font-family: var(--ff-footer);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +176,6 @@ footer {
       -ms-grid-row-align: center;
       align-self: center;
   max-width: 286px;
-  margin: 4rem 0 4.8rem 0;
 }
 
 .hero h1 {
@@ -185,7 +184,6 @@ footer {
   line-height: 71px;
   letter-spacing: -0.035em;
   font-style: normal;
-  margin-bottom: 1.875rem;
 }
 
 .hero p {
@@ -194,8 +192,8 @@ footer {
   color: var(--clr-primary-400);
   font-family: Space Mono;
   line-height: 27px;
+  padding: 2rem 0;
   letter-spacing: -0.035em;
-  margin-bottom: 4.125rem;
 }
 
 @media (min-width: 90em) {
@@ -204,10 +202,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 12.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero img {
     -ms-flex-item-align: center;
@@ -229,7 +229,7 @@ footer p {
   color: var(--clr-primary-footer);
   font-size: 0.875rem;
   margin-left: -1.5rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .hero__button {

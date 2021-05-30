@@ -7,12 +7,12 @@ html {
 main {
     min-height: 100vh;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     padding: 0 0 0 1.5rem 
 }
 footer {
     font-family: var(--ff-footer);
-    flex-grow: 1;
     display: flex;
     align-items: flex-end;
     justify-content: center;
